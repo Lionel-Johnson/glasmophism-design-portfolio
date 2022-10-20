@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio en glasmophism design</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div class="user">
+        <img src="images/Lionel1.png" alt="">
+        <h3 class="name">Lionel Johnson</h3>
+        <p class="post">UI, UX Designer. <br> Déveoppeur web & mobile junior, spécialisé en front</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+      <!---------SMTP.JS------------>
+    
+      <script src=https://smtpjs.com/v3/smtp.js></script>
+      <script>
+        function sendEmail() {
+          Email.send({
+            Host: "smtp.@gmail.com",
+            Username: "username",
+            Password: "password",
+            To: "officiel.lionel26@gmail.com",
+            From: document.getElementById("email").value,
+            Subject: "New Contact From Enquiry",
+            Body: "Fisrt name" + document.getElementById("name").value,
+            Body: "Last name" + document.getElementById("name").value,
+            Body: "email" + document.getElementById("email").value,
+            Body: "your project" + document.getElementById("project").value,
+            Body: "message" + document.getElementById("message").value,
+          }).then(
+            message => alert("Message envoyé avec succès")
+          );
+        }
+      </script>
+
+
+</header>
+
+<!-- header section ends -->
+
+<!-- content section starts  -->
+
+<div class="container">
+
+    <section class="home" id="home">
+
+        <h3>Salutations...</h3>
+        <h3 class="name">Je suis <span>Lionel Johnson</span></h3>
+        <h3 class="post">Je suis un  <span class="typing-text">designeur d'interfaces utiliateurs, développeur web/mobile junior spécilisé en front. </span></h3>
+
+        <a href="#"><button class="btn">Me solliciter</button></a>
+
+        <div class="share">
+            <a href="https://facebook.com/lionel26n" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/Lionel262" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="https://www.pinterest.com/lionelofficiel/" class="fab fa-pinterest"></a>
+            <a href="https://www.linkedin.com/in/lionel-mo
+            ukendou-01a14a228" class="fab fa-linkedin"></a>
+        </div>
+
+    </section>
+
+    <!-- about section  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">A propos de moi</h1>
+
+        <div class="content">
+            <h3 class="name">Je suis <span>Lionel Johnson</span></h3>
+            <p>Ma plus grande priorité est la satisfaction du client, de 
+                fournir rapidement des fonctionnalités  et ce, de manière cohérente
+                avec une grande valeur ajoutée. <br>Je suis avant tout un agent de maîtrise en administration des affaires et aujourd'hui j'y ai ajouté ma reconversion professionnelle en web et
+            développement mobile, sortant de l'école 241 de Port-Gentil dans sa première promotion.
+            Je suis également designer, développeur web / mobile spécialisé en fromt.</p>
+        </div>
+
+        <div class="skills">
+            <div class="progress">
+                <h3>Html <span>95%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>Css <span>85%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>JavaScript <span>65%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>React js <span>50%</span></h3>
+                <div class="bar"><span></span></div>
+            </div> 
+            <div class="progress">
+                <h3>Photoshop<span>70%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+            <div class="progress">
+                <h3>WordPress<span>75%</span></h3>
+                <div class="bar"><span></span></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- service section  -->
+    <section class="service" id="service">
+
+        <h1 class="heading">Mes services</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="cahier"><img src="./images/CDC Johnson.jpg" alt=""/></div>
+                <p class="redac" >Rédaction et analyse des cahiers de charges.</p>
+                <br><br>
+                <br><br>
+            </div>
+
+            <div class="box">
+                <div class="BD"><img src="./images/MODELISATION HOTEL.png" alt=""/></div>
+                <p class="model" >Modélisation & implémentation des bases de données.</p>
+                <br><br>
+            </div>
+
+            <div class="box">
+                <div class="design"><img src="./images/design.jpg" alt=""/></div>
+                <p class="des" >Design des Applications web/mobile (interfaces utiliateurs).</p>
+                <br><br>
+            </div>
+
+            <div class="box">
+                <div class="maquette"><img src="./images/Lionel prototype.png" alt=""/></div>
+                <p class="maq" >Maquettage & intégrations de plusieurs types de projets à la demamnde du client.</p>
+            </div>
+
+            <div class="box">
+                <div class="economie"><img src="./images/KPI-pour-la-gestion-de-projet.png" alt=""/></div>
+                <p class="apport" >Apport des solutions numérique paliatives aux crises économiques par des valeurs ajoutées.  Reférencement, visibilité, déployement et hébergement des App.</p>
+            </div>
+
+            <div class="box">
+                <div class="refonte"><img src="./images/05-Rooms-Grid.png" alt=""/></div>
+                <p class="ref" >Refonte & mises à jour des App web/mobiles ( modifications et/ou ajout des pages aux contenus existants).</p>
+                <br><br>
+                <br><br>
+            </div>
+            <a href="./images/Lionel CV.pdf" ><button class="down" >Télécharger mon CV</button></a>
+
+        </div>
+
+    </section>
+
+    <!-- education section  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading">Ma formation</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="year">17/03/2022 - 30/04/2022</div>
+                <h3>Veilles technologiques</h3>
+                <p>Contours et évolutions du web et de l'internet</p>
+            </div>
+
+            <div class="box">
+                <div class="year">01/05/2022 - 30/05/2022</div>
+                <h3>Economie numérique</h3>
+                <p>Business model canvas, Ampathy canvas, UI, learn UX & UX design. Trouver des solutions aux différentes thématiques posées et les faire mettre en application.</p>
+            </div>
+
+            <div class="box">
+                <div class="year">01/06/2022 - 30/07/2022</div>
+                <h3>Html, Css & JavaScript</h3>
+                <p>Maquettages & intégrations</p>
+            </div>
+
+            <div class="box">
+                <div class="year">01/08/2022 - 30/09/2022</div>
+                <h3>Node Js, React Js & PHP</h3>
+                <p>Modélisation & implémentation des bases de données. intégrations complètes des projets & connextions des bases des données.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section  -->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Me contacter</h1>
+
+        <div class="row">
+
+            <form action="">
+                <input type="text" class="box" placeholder="Nom">
+                <input type="text" class="box" placeholder="Prénom">
+                <input type="email" class="box" placeholder="Votre E-mail">
+                <input type="text" class="box" placeholder="Vote projet">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Saissisez vottre message ici!!!"></textarea>
+                <input type="submit" value="soumettre" class="btn">
+            </form>
+
+            <div class="content">
+                <div class="icons">
+                    <h3><i class="fas fa-map-marker-alt"></i> addresse </h3>
+                    <p>Port-Gentil, Gabon</p>
+                </div>
+                <div class="icons">
+                    <h3><i class="fas fa-envelope"></i> E-mail </h3>
+                    <p>officiel.lionel26@gmail.com</p>
+                </div>
+                <div class="icons">
+                    <h3><i class="fas fa-envelope"></i> site web </h3>
+                    <p>https://lionel-contact.ga</p>
+                </div>
+                <div class="icons">
+                    <h3><i class="fas fa-phone"></i> phone </h3>
+                    <p>+241 - 741 298 - 12</p>
+                </div>
+                <br><br>
+                <p class="copyright">
+                Copyright © Lionel MOUKENDOU 2022 <br> <a href="https://lionel-contact.ga">lionel-contact.ga</a>. Tous droits réservés.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- content section ends -->
+
+<!-- theme toggler  -->
+
+<div class="theme-toggler">
+    <span style="background: linear-gradient(deeppink, purple);"></span>
+    <span style="background: linear-gradient(lightgreen, crimson);"></span>
+    <span style="background:linear-gradient(blueviolet, deeppink)"></span>
+    <span style="background:linear-gradient(coral, blueviolet)"></span>
+    <span style="background:linear-gradient(#999, #111)"></span>
+</div>
+
+
+<!-- type.js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+<script>
+
+    var type = new Typed('.typing-text',{
+        strings : [ 'UI, UX', 'designer web', 'développeur web & mobile spécialisé en front', 'infographe 2D & 3D' ],
+        typeSpeed: 120,
+        loop:true
+    });
+
+    let themeColor = document.querySelectorAll('.theme-toggler span');
+    themeColor.forEach(color => color.addEventListener('click', () =>{
+        let background = color.style.background;
+        document.querySelector('body').style.background = background;
+    }));
+
+</script>
+
+
+  <!--------------Chatbox whatsapp---------->
+  <script type="text/javascript">
+    var config = {
+      phone: " +24174129812",
+      call: "Me joindre sur whatsapp",
+      position: "ww-right",
+      size: "ww-normal",
+      text: "Salut! Je suis intéressé par vos offres",
+      type: "ww-standard",
+      brand: "Lionel Développeur web fomt end",
+      subtitle: "Développement des applications web / mobiles front end junior",
+      welcome: "Salut! Comment puis-je vous aider?"
+    };
+    var proto = document.location.protocol, host = "cloudfront.net", url = proto + "//d3kzab8jj16n2f." + host;
+    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = url + "/v2/main.js";
+
+    s.onload = function () { tmWidgetInit(config) };
+    var x = document.getElementsByTagName("script")[0]; x.parentNode.insertBefore(s, x);
+  </script>
+
+</body>
+
+</html>
